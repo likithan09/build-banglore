@@ -1,0 +1,74 @@
+[
+  {
+    "test_id": 1,
+    "name": "Plain Background Photo",
+    "desc": "Handcrafted wooden artifact on clean neutral background",
+    "ok": true,
+    "expected_ok": true,
+    "cutout_success": true,
+    "category": "toys (50.7%)",
+    "color_preservation_delta_rgb": 0.85,
+    "load_ms": 78.4,
+    "cutout_ms": 17923.5,
+    "category_ms": 21831.4,
+    "enhance_ms": 448.9,
+    "composite_ms": 841.1,
+    "total_ms": 41135.5,
+    "warnings": []
+  },
+  {
+    "test_id": 2,
+    "name": "Cluttered/Busy Photo",
+    "desc": "Woodcraft on busy workshop floor with planks and tool clutter",
+    "ok": true,
+    "expected_ok": true,
+    "cutout_success": true,
+    "category": "toys (47.4%)",
+    "color_preservation_delta_rgb": 1.78,
+    "load_ms": 27.5,
+    "cutout_ms": 7737.8,
+    "category_ms": 2692.7,
+    "enhance_ms": 23.7,
+    "composite_ms": 477.6,
+    "total_ms": 10965.2,
+    "warnings": []
+  },
+  {
+    "test_id": 3,
+    "name": "Small Product / Bad Crop (<2% coverage)",
+    "desc": "Tiny object occupying only 0.16% of frame",
+    "ok": false,
+    "expected_ok": false,
+    "cutout_success": false,
+    "category": "N/A",
+    "color_preservation_delta_rgb": 0.0,
+    "load_ms": 0,
+    "cutout_ms": 0,
+    "category_ms": 0,
+    "enhance_ms": 0,
+    "composite_ms": 0,
+    "total_ms": 3299.3,
+    "warnings": [
+      "Product covers under 2% of photo (0.2%). Subject may be too small or missing."
+    ]
+  },
+  {
+    "test_id": 4,
+    "name": "Corrupt or Unreadable File",
+    "desc": "Invalid binary data payload",
+    "ok": false,
+    "expected_ok": false,
+    "cutout_success": false,
+    "category": "N/A",
+    "color_preservation_delta_rgb": 0.0,
+    "load_ms": 0,
+    "cutout_ms": 0,
+    "category_ms": 0,
+    "enhance_ms": 0,
+    "composite_ms": 0,
+    "total_ms": 207.6,
+    "warnings": [
+      "Unreadable or corrupt file: cannot identify image file 'C:\\\\Users\\\\mayam\\\\OneDrive\\\\Desktop\\\\build banglore\\\\tests\\\\test_images\\\\test_corrupt.jpg'"
+    ]
+  }
+]

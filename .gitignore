@@ -1,0 +1,29 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Build files
+dist/
+build/
+
+# Database
+*.db
+
+# Large AI models
+*.bin
+*.pt
+*.pth
+
+# IDE
+.vscode/

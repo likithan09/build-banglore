@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  # Standalone Mock GST Enrollment ID Service (Port 4000 §5)
+  gst-enrollment-mock:
+    build:
+      context: ./services/gst-enrollment-mock
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    environment:
+      - PORT=4000
+      - MOCK_SERVICE=true
+    restart: unless-stopped
+
+  # KALASETU Backend API (Port 8000)
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=development
+      - PORT=8000
+      - MOCK_ENROLLMENT_SERVICE_URL=http://gst-enrollment-mock:4000
+    depends_on:
+      - gst-enrollment-mock
+    restart: unless-stopped
+
+  # KALASETU Frontend (Port 5174)
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5174:5174"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  # Standalone GST Enrollment Demo App (Port 5173)
+  gst-demo:
+    build:
+      context: ./gst-demo
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    restart: unless-stopped

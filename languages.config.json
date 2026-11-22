@@ -1,0 +1,184 @@
+{
+  "sarvam_models": {
+    "stt": {
+      "default_model": "saaras:v2",
+      "fallback_model": "saarika:v1",
+      "endpoint": "/speech-to-text",
+      "modes": ["transcribe", "translate", "verbatim"]
+    },
+    "tts": {
+      "default_model": "bulbul:v1",
+      "fallback_model": "bulbul:v2",
+      "endpoint": "/text-to-speech",
+      "default_pace": 1.0,
+      "audio_format": "mp3"
+    },
+    "translation": {
+      "default_model": "mayura:v1",
+      "longform_model": "sarvam-translate:v1",
+      "endpoint": "/translate"
+    },
+    "chat": {
+      "default_model": "sarvam-2b",
+      "endpoint": "/chat/completions"
+    }
+  },
+  "supported_languages": [
+    {
+      "code": "en-IN",
+      "short_code": "en",
+      "name": "English",
+      "native_name": "English",
+      "script": "Latn",
+      "dir": "ltr",
+      "font_family": "'Noto Sans', sans-serif",
+      "stt_supported": true,
+      "tts_supported": true,
+      "translate_supported": true
+    },
+    {
+      "code": "hi-IN",
+      "short_code": "hi",
+      "name": "Hindi",
+      "native_name": "हिन्दी",
+      "script": "Deva",
+      "dir": "ltr",
+      "font_family": "'Noto Sans Devanagari', 'Noto Sans', sans-serif",
+      "stt_supported": true,
+      "tts_supported": true,
+      "translate_supported": true
+    },
+    {
+      "code": "bn-IN",
+      "short_code": "bn",
+      "name": "Bengali",
+      "native_name": "বাংলা",
+      "script": "Beng",
+      "dir": "ltr",
+      "font_family": "'Noto Sans Bengali', 'Noto Sans', sans-serif",
+      "stt_supported": true,
+      "tts_supported": true,
+      "translate_supported": true
+    },
+    {
+      "code": "ta-IN",
+      "short_code": "ta",
+      "name": "Tamil",
+      "native_name": "தமிழ்",
+      "script": "Taml",
+      "dir": "ltr",
+      "font_family": "'Noto Sans Tamil', 'Noto Sans', sans-serif",
+      "stt_supported": true,
+      "tts_supported": true,
+      "translate_supported": true
+    },
+    {
+      "code": "te-IN",
+      "short_code": "te",
+      "name": "Telugu",
+      "native_name": "తెలుగు",
+      "script": "Telu",
+      "dir": "ltr",
+      "font_family": "'Noto Sans Telugu', 'Noto Sans', sans-serif",
+      "stt_supported": true,
+      "tts_supported": true,
+      "translate_supported": true
+    },
+    {
+      "code": "kn-IN",
+      "short_code": "kn",
+      "name": "Kannada",
+      "native_name": "ಕನ್ನಡ",
+      "script": "Knda",
+      "dir": "ltr",
+      "font_family": "'Noto Sans Kannada', 'Noto Sans', sans-serif",
+      "stt_supported": true,
+      "tts_supported": true,
+      "translate_supported": true
+    },
+    {
+      "code": "ml-IN",
+      "short_code": "ml",
+      "name": "Malayalam",
+      "native_name": "മലയാളം",
+      "script": "Mlym",
+      "dir": "ltr",
+      "font_family": "'Noto Sans Malayalam', 'Noto Sans', sans-serif",
+      "stt_supported": true,
+      "tts_supported": true,
+      "translate_supported": true
+    },
+    {
+      "code": "mr-IN",
+      "short_code": "mr",
+      "name": "Marathi",
+      "native_name": "मराठी",
+      "script": "Deva",
+      "dir": "ltr",
+      "font_family": "'Noto Sans Devanagari', 'Noto Sans', sans-serif",
+      "stt_supported": true,
+      "tts_supported": true,
+      "translate_supported": true
+    },
+    {
+      "code": "gu-IN",
+      "short_code": "gu",
+      "name": "Gujarati",
+      "native_name": "ગુજરાતી",
+      "script": "Gujr",
+      "dir": "ltr",
+      "font_family": "'Noto Sans Gujarati', 'Noto Sans', sans-serif",
+      "stt_supported": true,
+      "tts_supported": true,
+      "translate_supported": true
+    },
+    {
+      "code": "pa-IN",
+      "short_code": "pa",
+      "name": "Punjabi",
+      "native_name": "ਪੰਜਾਬੀ",
+      "script": "Guru",
+      "dir": "ltr",
+      "font_family": "'Noto Sans Gurmukhi', 'Noto Sans', sans-serif",
+      "stt_supported": true,
+      "tts_supported": true,
+      "translate_supported": true
+    },
+    {
+      "code": "od-IN",
+      "short_code": "od",
+      "name": "Odia",
+      "native_name": "ଓଡ଼ିଆ",
+      "script": "Orya",
+      "dir": "ltr",
+      "font_family": "'Noto Sans Oriya', 'Noto Sans', sans-serif",
+      "stt_supported": true,
+      "tts_supported": true,
+      "translate_supported": true
+    },
+    {
+      "code": "as-IN",
+      "short_code": "as",
+      "name": "Assamese",
+      "native_name": "অসমীয়া",
+      "script": "Beng",
+      "dir": "ltr",
+      "font_family": "'Noto Sans Bengali', 'Noto Sans', sans-serif",
+      "stt_supported": false,
+      "tts_supported": false,
+      "translate_supported": true
+    },
+    {
+      "code": "ur-IN",
+      "short_code": "ur",
+      "name": "Urdu",
+      "native_name": "اردو",
+      "script": "Arab",
+      "dir": "rtl",
+      "font_family": "'Noto Nastaliq Urdu', 'Noto Sans Arabic', sans-serif",
+      "stt_supported": false,
+      "tts_supported": false,
+      "translate_supported": true
+    }
+  ]
+}

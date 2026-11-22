@@ -1,0 +1,12 @@
+{
+  "name": "gst-enrollment-mock-service",
+  "version": "1.0.0",
+  "description": "Mock GST Enrollment ID Service for Marginalized Artisans (KALASETU Demo)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "author": "KALASETU Team",
+  "license": "ISC"
+}
